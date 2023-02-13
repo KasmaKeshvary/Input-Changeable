@@ -7,7 +7,7 @@
             content="IE=edge">
       <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>InputChangeable</title>
       <style>
             .flex {
                   display: flex;
@@ -64,7 +64,11 @@
                   margin: 0% 0% 0% 2%;
             }
 
-            .TextSize {
+            .TextWidth {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .TextHeight {
                   margin: 0% 0% 1% 2%;
             }
 
@@ -77,6 +81,10 @@
             }
 
             .TextFontFamily {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .TextFontSize {
                   margin: 0% 0% 1% 2%;
             }
 
@@ -120,27 +128,41 @@
                          oninput="BorderSize()">
             </div>
             <div class="BorderRadius">
-                  BorderRadius : <input id="BorderRadius">px
+                  BorderRadius : <input id="BorderRadius"
+                         oninput="BorderRadius()">
             </div>
             <div class="BorderColor">
-                  BorderColor : <input id="BorderColor">
+                  BorderColor : <input id="BorderColor"
+                         oninput="BorderColor()">
             </div>
       </div>
       <div class="Text">
             <div class="TextHead">
                   <p>Text</p>
             </div>
-            <div class="TextSize">
-                  TextSize : <input id="TextSize">px
+            <div class="TextWidth">
+                  TextWidth : <input id="TextWidth"
+                         oninput="TextWidth()">
+            </div>
+            <div class="TextHeight">
+                  TextHeight : <input id="TextHeight"
+                         oninput="TextHeight()">
             </div>
             <div class="TextColor">
-                  TextColor : <input id="TextColor">
+                  TextColor : <input id="TextColor"
+                         oninput="TextColor()">
             </div>
             <div class="TextBackgroundColor">
-                  TextBackgroundColor : <input id="TextBackgroundColor">
+                  TextBackgroundColor : <input id="TextBackgroundColor"
+                         oninput="TextBackgroundColor()">
             </div>
             <div class="TextFontFamily">
-                  TextFontFamily : <input id="TextFontFamily">px
+                  TextFontFamily : <input id="TextFontFamily"
+                         oninput="TextFontFamily()">
+            </div>
+            <div class="TextFontSize">
+                  TextFontSize : <input id="TextFontSize"
+                         oninput="TextFontSize()">
             </div>
       </div>
       <div class="Label">
@@ -169,8 +191,64 @@
             } else {
                   document.getElementById("input").style.borderWidth = BorderSize + "px";
             }
-
       }
+
+      function BorderRadius() {
+            var BorderRadius = document.getElementById("BorderRadius").value;
+            if (BorderRadius.includes("px")) {
+                  document.getElementById("input").style.borderRadius = BorderRadius;
+            } else {
+                  document.getElementById("input").style.borderRadius = BorderRadius + "px";
+            }
+      }
+
+      function BorderColor() {
+            var BorderColor = document.getElementById("BorderColor").value;
+            document.getElementById("input").style.borderColor = BorderColor;
+      }
+
+      function TextWidth() {
+            var TextWidth = document.getElementById("TextWidth").value;
+            if (TextWidth.includes("px")) {
+                  document.getElementById("input").style.width = TextWidth;
+            } else {
+                  document.getElementById("input").style.width = TextWidth + "px";
+            }
+      }
+
+      function TextHeight() {
+            var TextHeight = document.getElementById("TextHeight").value;
+            if (TextHeight.includes("px")) {
+                  document.getElementById("input").style.height = TextHeight;
+            } else {
+                  document.getElementById("input").style.height = TextHeight + "px";
+            }
+      }
+
+      function TextColor() {
+            var TextColor = document.getElementById("TextColor").value;
+            document.getElementById("input").style.color = TextColor;
+      }
+
+      function TextBackgroundColor() {
+            var TextBackgroundColor = document.getElementById("TextBackgroundColor").value;
+            document.getElementById("input").style.backgroundColor = TextBackgroundColor;
+      }
+
+      function TextFontFamily() {
+            var TextFontFamily = document.getElementById("TextFontFamily").value;
+            document.getElementById("input").style.fontFamily = TextFontFamily;
+      }
+
+      function TextFontSize() {
+            var TextFontSize = document.getElementById("TextFontSize").value;
+            if (TextFontSize.includes("px")) {
+                  document.getElementById("input").style.fontSize = TextFontSize;
+            } else {
+                  document.getElementById("input").style.fontSize = TextFontSize + "px";
+            }
+      }
+
 </script>
 
 </html>
