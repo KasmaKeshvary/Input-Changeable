@@ -97,86 +97,150 @@
                   margin: 0% 0% 0% 2%;
             }
 
-            .LabelOutBorder {
+            .LabelWidth {
                   margin: 0% 0% 1% 2%;
             }
 
-            .LabelINBorder {
+            .LabelHeight {
                   margin: 0% 0% 1% 2%;
+            }
+
+            .LabelTop {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelLeft {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelColor {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelBackgroundColor {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelFontFamily {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelFontSize {
+                  margin: 0% 0% 1% 2%;
+            }
+
+
+            label {
+                  position: absolute;
+                  top: 41px;
+                  left: 16px;
+                  background-color: white;
+                  /* border: solid 0.5px; */
             }
       </style>
 </head>
-<div class="flex">
-      <div class="InputBox">
-            <div class="InputBoxHead">
-                  <p>Input Box</p>
+
+<body>
+      <div class="flex">
+            <div class="InputBox">
+                  <div class="InputBoxHead">
+                        <p>Input Box</p>
+                  </div>
+                  <div>
+                        <label id="label">Label</label>
+                  </div>
+                  <div class="input">
+                        <input id="input">
+                  </div>
             </div>
-            <div class="input">
-                  <input id="input">
+            <div class="Border">
+                  <div class="BorderHead">
+                        <p>Border</p>
+                  </div>
+                  <div class="BorderModel">
+                        BorderModel : <input id="BorderModel"
+                               oninput="BorderModel()">
+                  </div>
+                  <div class="BorderSize">
+                        BorderSize : <input id="BorderSize"
+                               oninput="BorderSize()">
+                  </div>
+                  <div class="BorderRadius">
+                        BorderRadius : <input id="BorderRadius"
+                               oninput="BorderRadius()">
+                  </div>
+                  <div class="BorderColor">
+                        BorderColor : <input id="BorderColor"
+                               oninput="BorderColor()">
+                  </div>
+            </div>
+            <div class="Text">
+                  <div class="TextHead">
+                        <p>Text</p>
+                  </div>
+                  <div class="TextWidth">
+                        TextWidth : <input id="TextWidth"
+                               oninput="TextWidth()">
+                  </div>
+                  <div class="TextHeight">
+                        TextHeight : <input id="TextHeight"
+                               oninput="TextHeight()">
+                  </div>
+                  <div class="TextColor">
+                        TextColor : <input id="TextColor"
+                               oninput="TextColor()">
+                  </div>
+                  <div class="TextBackgroundColor">
+                        TextBackgroundColor : <input id="TextBackgroundColor"
+                               oninput="TextBackgroundColor()">
+                  </div>
+                  <div class="TextFontFamily">
+                        TextFontFamily : <input id="TextFontFamily"
+                               oninput="TextFontFamily()">
+                  </div>
+                  <div class="TextFontSize">
+                        TextFontSize : <input id="TextFontSize"
+                               oninput="TextFontSize()">
+                  </div>
+            </div>
+            <div class="Label">
+                  <div class="LabelHead">
+                        <p>Label</p>
+                  </div>
+                  <div class="LabelWidth">
+                        LabelWidth : <input id="LabelWidth"
+                               oninput="LabelWidth()">
+                  </div>
+                  <div class="LabelHeight">
+                        LabelHeight : <input id="LabelHeight"
+                               oninput="LabelHeight()">
+                  </div>
+                  <div class="LabelTop">
+                        LabelTop : <input id="LabelTop"
+                               oninput="LabelTop()">
+                  </div>
+                  <div class="LabelLeft">
+                        LabelLeft : <input id="LabelLeft"
+                               oninput="LabelLeft()">
+                  </div>
+                  <div class="LabelColor">
+                        LabelColor : <input id="LabelColor"
+                               oninput="LabelColor()">
+                  </div>
+                  <div class="LabelBackgroundColor">
+                        LabelBackgroundColor : <input id="LabelBackgroundColor"
+                               oninput="LabelBackgroundColor()">
+                  </div>
+                  <div class="LabelFontFamily">
+                        LabelFontFamily : <input id="LabelFontFamily"
+                               oninput="LabelFontFamily()">
+                  </div>
+                  <div class="LabelFontSize">
+                        LabelFontSize : <input id="LabelFontSize"
+                               oninput="LabelFontSize()">
+                  </div>
             </div>
       </div>
-      <div class="Border">
-            <div class="BorderHead">
-                  <p>Border</p>
-            </div>
-            <div class="BorderModel">
-                  BorderModel : <input id="BorderModel"
-                         oninput="BorderModel()">
-            </div>
-            <div class="BorderSize">
-                  BorderSize : <input id="BorderSize"
-                         oninput="BorderSize()">
-            </div>
-            <div class="BorderRadius">
-                  BorderRadius : <input id="BorderRadius"
-                         oninput="BorderRadius()">
-            </div>
-            <div class="BorderColor">
-                  BorderColor : <input id="BorderColor"
-                         oninput="BorderColor()">
-            </div>
-      </div>
-      <div class="Text">
-            <div class="TextHead">
-                  <p>Text</p>
-            </div>
-            <div class="TextWidth">
-                  TextWidth : <input id="TextWidth"
-                         oninput="TextWidth()">
-            </div>
-            <div class="TextHeight">
-                  TextHeight : <input id="TextHeight"
-                         oninput="TextHeight()">
-            </div>
-            <div class="TextColor">
-                  TextColor : <input id="TextColor"
-                         oninput="TextColor()">
-            </div>
-            <div class="TextBackgroundColor">
-                  TextBackgroundColor : <input id="TextBackgroundColor"
-                         oninput="TextBackgroundColor()">
-            </div>
-            <div class="TextFontFamily">
-                  TextFontFamily : <input id="TextFontFamily"
-                         oninput="TextFontFamily()">
-            </div>
-            <div class="TextFontSize">
-                  TextFontSize : <input id="TextFontSize"
-                         oninput="TextFontSize()">
-            </div>
-      </div>
-      <div class="Label">
-            <div class="LabelHead">
-                  <p>Label</p>
-            </div>
-            <div class="LabelOutBorder">
-                  LabelOutBorder : <input id="LabelOutBorder">
-            </div>
-            <div class="LabelINBorder">
-                  LabelINBorder : <input id="LabelINBorder">
-            </div>
-      </div>
-</div>
 </body>
 <script>
       function BorderModel() {
@@ -246,6 +310,66 @@
                   document.getElementById("input").style.fontSize = TextFontSize;
             } else {
                   document.getElementById("input").style.fontSize = TextFontSize + "px";
+            }
+      }
+
+      function LabelWidth() {
+            var LabelWidth = document.getElementById("LabelWidth").value;
+            if (LabelWidth.includes("px")) {
+                  document.getElementById("label").style.width = LabelWidth;
+            } else {
+                  document.getElementById("label").style.width = LabelWidth + "px";
+            }
+      }
+
+      function LabelHeight() {
+            var LabelHeight = document.getElementById("LabelHeight").value;
+            if (LabelHeight.includes("px")) {
+                  document.getElementById("label").style.height = LabelHeight;
+            } else {
+                  document.getElementById("label").style.height = LabelHeight + "px";
+            }
+      }
+
+      function LabelTop() {
+            var LabelTop = document.getElementById("LabelTop").value;
+            if (LabelTop.includes("px")) {
+                  document.getElementById("label").style.top = LabelTop;
+            } else {
+                  document.getElementById("label").style.top = LabelTop + "px";
+            }
+      }
+
+      function LabelLeft() {
+            var LabelLeft = document.getElementById("LabelLeft").value;
+            if (LabelLeft.includes("px")) {
+                  document.getElementById("label").style.left = LabelLeft;
+            } else {
+                  document.getElementById("label").style.left = LabelLeft + "px";
+            }
+      }
+
+      function LabelColor() {
+            var LabelColor = document.getElementById("LabelColor").value;
+            document.getElementById("label").style.color = LabelColor;
+      }
+
+      function LabelBackgroundColor() {
+            var LabelBackgroundColor = document.getElementById("LabelBackgroundColor").value;
+            document.getElementById("label").style.backgroundColor = LabelBackgroundColor;
+      }
+
+      function LabelFontFamily() {
+            var LabelFontFamily = document.getElementById("LabelFontFamily").value;
+            document.getElementById("label").style.fontFamily = LabelFontFamily;
+      }
+
+      function LabelFontSize() {
+            var LabelFontSize = document.getElementById("LabelFontSize").value;
+            if (LabelFontSize.includes("px")) {
+                  document.getElementById("label").style.fontSize = LabelFontSize;
+            } else {
+                  document.getElementById("label").style.fontSize = LabelFontSize + "px";
             }
       }
 
