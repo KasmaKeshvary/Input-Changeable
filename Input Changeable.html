@@ -2,14 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible"
+            content="IE=edge">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            .flex {
+                  display: flex;
+            }
+
+            input[type=text]:focus {
+                  border: 3px solid #555;
+            }
+
+            .InputBox {
+                  width: 40%;
+                  border: 1px solid gray;
+            }
+
+            .InputBoxHead {
+                  margin: 0% 0% 0% 2%;
+            }
+
+            .input {
+                  margin: 0% 0% 0% 2%;
+            }
+
+            .Border {
+                  width: 20%;
+                  border: 1px solid gray;
+            }
+
+            .BorderHead {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .BorderSize {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .BorderRadius {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .BorderColor {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .BorderModel {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .Text {
+                  width: 20%;
+                  border: 1px solid gray;
+            }
+
+            .TextHead {
+                  margin: 0% 0% 0% 2%;
+            }
+
+            .TextSize {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .TextColor {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .TextBackgroundColor {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .TextFontFamily {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .Label {
+                  width: 20%;
+                  border: 1px solid gray;
+            }
+
+            .LabelHead {
+                  margin: 0% 0% 0% 2%;
+            }
+
+            .LabelOutBorder {
+                  margin: 0% 0% 1% 2%;
+            }
+
+            .LabelINBorder {
+                  margin: 0% 0% 1% 2%;
+            }
+      </style>
 </head>
-<input id="input">change me
+<div class="flex">
+      <div class="InputBox">
+            <div class="InputBoxHead">
+                  <p>Input Box</p>
+            </div>
+            <div class="input">
+                  <input id="input">
+            </div>
+      </div>
+      <div class="Border">
+            <div class="BorderHead">
+                  <p>Border</p>
+            </div>
+            <div class="BorderModel">
+                  BorderModel : <input id="BorderModel"
+                         oninput="BorderModel()">
+            </div>
+            <div class="BorderSize">
+                  BorderSize : <input id="BorderSize"
+                         oninput="BorderSize()">
+            </div>
+            <div class="BorderRadius">
+                  BorderRadius : <input id="BorderRadius">px
+            </div>
+            <div class="BorderColor">
+                  BorderColor : <input id="BorderColor">
+            </div>
+      </div>
+      <div class="Text">
+            <div class="TextHead">
+                  <p>Text</p>
+            </div>
+            <div class="TextSize">
+                  TextSize : <input id="TextSize">px
+            </div>
+            <div class="TextColor">
+                  TextColor : <input id="TextColor">
+            </div>
+            <div class="TextBackgroundColor">
+                  TextBackgroundColor : <input id="TextBackgroundColor">
+            </div>
+            <div class="TextFontFamily">
+                  TextFontFamily : <input id="TextFontFamily">px
+            </div>
+      </div>
+      <div class="Label">
+            <div class="LabelHead">
+                  <p>Label</p>
+            </div>
+            <div class="LabelOutBorder">
+                  LabelOutBorder : <input id="LabelOutBorder">
+            </div>
+            <div class="LabelINBorder">
+                  LabelINBorder : <input id="LabelINBorder">
+            </div>
+      </div>
+</div>
 </body>
+<script>
+      function BorderModel() {
+            var BorderModel = document.getElementById("BorderModel").value;
+            document.getElementById("input").style.borderStyle = BorderModel;
+      }
+
+      function BorderSize() {
+            var BorderSize = document.getElementById("BorderSize").value;
+            if (BorderSize.includes("px")) {
+                  document.getElementById("input").style.borderWidth = BorderSize;
+            } else {
+                  document.getElementById("input").style.borderWidth = BorderSize + "px";
+            }
+
+      }
+</script>
 
 </html>
